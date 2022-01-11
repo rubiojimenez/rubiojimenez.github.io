@@ -289,27 +289,3 @@ table tr td
 { background: #eee;
   color: #555;
   border-top: 1px solid #FFF;}
-
-/* Source for the following lines: https://stackoverflow.com/questions/90178/make-a-div-fill-the-height-of-the-remaining-screen-space */
-
-.box {
-  display: flex;
-  flex-flow: column;
-  height: 100%;
-}
-
-.box .row {
-  border: 1px dotted grey;
-}
-
-.box .row.header {
-  flex: 0 1 auto;
-}
-
-.box .row.content {
-  flex: 1 1 auto;
-}
-
-.box .row.footer {
-  flex: 0 1 40px;
-}
