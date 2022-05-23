@@ -289,3 +289,8 @@ table tr td
 { background: #eee;
   color: #555;
   border-top: 1px solid #FFF;}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
