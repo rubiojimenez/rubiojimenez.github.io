@@ -1,168 +1,232 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font: normal .78em arial, sans-serif;
-    background: #444;
-    color: #555;
-  }
-  
-  #main, #header, #logo, #menubar, #site_content, #footer {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  #main {
-    width: 100%;
-    max-width: 910px;
-    background: url(content.png) repeat-y;
-  }
-  
-  #header {
-    width: 100%;
-    max-width: 890px;
-    background: url(back.png) repeat-x;
-  }
-  
-  #logo {
-    width: 100%;
-    max-width: 890px;
-    position: relative;
-    height: 200px;
-    background: url(logo.jpg) no-repeat;
-  }
-  
-  #logo #logo_text {
-    position: absolute;
-    top: 0px;
-    left: 30px;
-  }
-  
-  #logo_text h1, #logo_text h2 {
-    font: normal 250% 'century gothic', arial, sans-serif;
-    border-bottom: 0;
-    text-transform: none;
-    margin: 0;
-  }
-  
-  #logo_text h1 a, #logo_text h1 a:hover {
-    padding: 10px 0 0 0;
-    color: #FFF;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-  }
-  
-  #logo_text h1 a .logo_colour {
-    color: #555;
-  }
-  
-  #logo_text h2 {
-    font-size: 130%;
-    padding: 0;
-    color: #444;
-  }
-  
-  #menubar {
-    width: 100%;
-    max-width: 890px;
-    height: 35px;
-    padding: 8px 0 0 0;
-    margin: -45px 0 0 0;
-    position: relative;
-    z-index: 1;
-    float: right;
-  }
-  
-  ul#menu {
-    float: right;
-    margin: 0;
-  }
-  
-  ul#menu li {
-    float: left;
-    margin: 5px 0 0 0;
-    padding: 0 0 0 6px;
-    list-style: none;
-  }
-  
-  ul#menu li a {
-    letter-spacing: 0em;
-    font: normal 105% arial, sans-serif;
-    text-transform: uppercase;
-    display: block;
-    float: left;
-    height: 20px;
-    text-decoration: none;
-    padding: 9px 22px 5px 16px;
-    text-align: center;
-    color: #FFF;
-    border: 0;
-  }
-  
-  ul#menu li.selected a {
-    height: 25px;
-    color: #111;
-    padding: 7px 22px 5px 16px;
-  }
-  
-  ul#menu li.selected {
-    margin: 7px 0 0 0;
-    background: #F8F8F8;
-  }
-  
-  ul#menu li a:hover {
-    color: #888;
-  }
-  
-  #site_content {
-    width: 100%;
-    max-width: 890px;
-    overflow: hidden;
-    background: #F8F8F8;
-  }
-  
-  .content {
-    padding: 16px;
-  }
-  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: normal .78em arial, sans-serif;
+  background: #444;
+  color: #555;
+}
+
+#main, #header, #logo, #menubar, #site_content, #footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main {
+  width: 910px;
+  max-width: 100%;
+  background: url(content.png) repeat-y;
+}
+
+#header {
+  width: 890px;
+  max-width: 100%;
+  background: url(back.png) repeat-x;
+}
+
+#logo {
+  width: 890px;
+  max-width: 100%;
+  position: relative;
+  height: 200px;
+  background: url(logo.jpg) no-repeat;
+}
+
+#logo #logo_text {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+
+#logo_text h1, #logo_text h2 {
+  font: normal 250% 'century gothic', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;
+}
+
+#logo_text h1 a, #logo_text h1 a:hover {
+  padding: 10px 0 0 0;
+  color: #FFF;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+#logo_text h1 a .logo_colour {
+  color: #555;
+}
+
+#logo_text h2 {
+  font-size: 130%;
+  padding: 0;
+  color: #444;
+}
+
+#menubar {
+  width: 890px;
+  max-width: 100%;
+  height: 35px;
+  padding: 8px 0 0 0;
+  margin: -45px 0 0 0;
+  position: relative;
+  z-index: 1;
+  float: right;
+}
+
+ul#menu {
+  float: right;
+  margin: 0;
+}
+
+ul#menu li {
+  float: left;
+  margin: 5px 0 0 0;
+  padding: 0 0 0 6px;
+  list-style: none;
+}
+
+ul#menu li a {
+  letter-spacing: 0em;
+  font: normal 105% arial, sans-serif;
+  text-transform: uppercase;
+  display: block;
+  float: left;
+  height: 20px;
+  text-decoration: none;
+  padding: 9px 22px 5px 16px;
+  text-align: center;
+  color: #FFF;
+  border: 0;
+}
+
+ul#menu li.selected a {
+  height: 25px;
+  color: #111;
+  padding: 7px 22px 5px 16px;
+}
+
+ul#menu li.selected {
+  margin: 7px 0 0 0;
+  background: #F8F8F8;
+}
+
+ul#menu li a:hover {
+  color: #888;
+}
+
+#site_content {
+  width: 890px;
+  max-width: 100%;
+  overflow: hidden;
+  background: #F8F8F8;
+}
+
+.sidebar {
+  float: right;
+  width: 198px;
+  padding: 20px 25px 15px 15px;
+}
+
+.sidebar ul {
+  width: 178px;
+  padding: 4px 0 0 0;
+  margin: 4px 0 30px 0;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 0 0 7px 0;
+}
+
+.sidebar li a,
+.sidebar li a:hover {
+  padding: 0 0 0 40px;
+  display: block;
+  background: transparent url(link.png) no-repeat left center;
+}
+
+.sidebar li a.selected {
+  color: #444;
+  text-decoration: none;
+}
+
+#content {
+  text-align: left;
+  width: 600px;
+  float: left;
+  padding: 20px 0 15px 30px;
+}
+
+#footer {
+  width: 890px;
+  max-width: 100%;
+  height: 33px;
+  padding: 20px 0 4px 0;
+  text-align: center;
+  background: #555;
+  color: #AAA;
+  border-top: 1px solid #FFF;
+  letter-spacing: 0.2em;
+  font-size: 80%;
+}
+
+#footer a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #header,
+  #logo,
+  #menubar,
+  #main,
+  #site_content,
+  .sidebar,
+  #content,
   #footer {
     width: 100%;
-    max-width: 890px;
-    clear: both;
-    text-align: center;
-    padding: 20px 0;
-    background: #FFF;
-    border-top: 1px solid #333;
-    color: #666;
+    max-width: 100%;
+    float: none;
   }
-  
-  /* Media Queries */
-  
-  @media only screen and (max-width: 768px) {
-    #header, #logo, #menubar {
-      max-width: 100%;
-    }
-    
-    #logo {
-      height: 150px;
-    }
-    
-    #logo_text h1, #logo_text h2 {
-      font-size: 200%;
-    }
+
+  #logo {
+    height: auto;
+    background-position: center top;
   }
-  
-  @media only screen and (max-width: 480px) {
-    #site_content {
-      max-width: 100%;
-    }
-    
-    .content {
-      padding: 8px;
-    }
-    
-    #footer {
-      padding: 10px 0;
-    }
+
+  #logo_text h1,
+  #logo_text h2 {
+    font-size: 150%;
   }
-  
+}
+
+@media only screen and (max-width: 480px) {
+  #logo_text h1,
+  #logo_text h2 {
+    font-size: 130%;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px 8px 15px 8px;
+  }
+
+  .sidebar ul {
+    width: 100%;
+    margin: 4px 0 30px 0;
+  }
+
+  #content {
+    width: 100%;
+    padding: 20px 8px 15px 8px;
+  }
+
+  #footer {
+    padding: 10px 0;
+  }
+}
