@@ -1,60 +1,84 @@
-/* General styles for larger screens */
+/* Reset styles */
+{ height: 100%; }
+* { margin: 0; padding: 0; }
+
+/* Body styles */
 body {
   font: normal .78em arial, sans-serif;
   background: #444;
   color: #555;
 }
 
-/* Header styles */
-#header {
-  width: 890px;
-  background: url(back.png) repeat-x;
-}
-
-/* Logo styles */
-#logo {
-  width: 890px;
-  height: 200px;
-  background: url(logo.jpg) no-repeat;
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font: normal 175% 'century gothic', arial, sans-serif;
+  color: #111;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
 }
 
 /* Navigation styles */
 #menubar {
-  width: 890px;
+  width: 100%;
   height: 35px;
   padding: 8px 0 0 0;
-  margin: -45px 0 0 0;
   position: relative;
   z-index: 1;
   float: right;
 }
 
+ul#menu {
+  float: none;
+  margin: 0;
+}
+
+ul#menu li {
+  float: none;
+  margin: 5px 0 0 0;
+  padding: 0 0 0 6px;
+  list-style: none;
+}
+
+ul#menu li a {
+  letter-spacing: 0em;
+  font: normal 105% arial, sans-serif;
+  text-transform: uppercase;
+  display: block; 
+  float: none; 
+  height: 20px;
+  text-decoration: none; 
+  padding: 9px 22px 5px 16px;
+  text-align: center;
+  color: #FFF;
+  border: 0;
+} 
+
 /* Main content styles */
 #main {
-  width: 910px;
+  width: 100%;
   background: url(content.png) repeat-y;
 }
 
 #content {
   text-align: left;
-  width: 600px;
-  float: left;
-  padding: 20px 0 15px 30px;
+  width: 100%;
+  float: none;
+  padding: 20px;
 }
 
 /* Sidebar styles */
 .sidebar {
-  float: right;
-  width: 198px;
+  float: none;
+  width: 100%;
   padding: 20px 25px 15px 15px;
 }
 
 /* Footer styles */
 #footer {
-  width: 890px;
+  width: 100%;
   height: 33px;
   padding: 20px 0 4px 0;
-  text-align: center;
+  text-align: center; 
   background: #555;
   color: #AAA;
   border-top: 1px solid #FFF;
@@ -63,30 +87,18 @@ body {
 }
 
 /* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
-  /* Adjustments for smaller screens */
-  #header, #logo, #menubar, #main, #footer {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  #logo {
-    height: 150px;
-  }
-
-  #menubar {
-    height: auto;
-    margin-top: 10px;
+@media only screen and (min-width: 768px) {
+  #main {
+    width: 910px;
   }
 
   #content {
-    width: 100%;
-    padding: 20px;
+    width: 600px;
+    float: left;
   }
 
   .sidebar {
-    float: none;
-    width: 100%;
+    float: right;
+    width: 198px;
   }
 }
