@@ -300,3 +300,46 @@ table tr td
   min-height: 100vh;
   overflow: auto; /* Allow scrolling if needed */
 }
+
+/* Smaller screens */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  #header {
+    height: auto;
+  }
+
+  #logo {
+    height: auto;
+  }
+
+  #logo_text h1 {
+    font-size: 1.5em; 
+  }
+
+  #menubar {
+    height: auto;
+  }
+
+  ul#menu li {
+    float: none;
+    display: block;
+    margin: 0;
+    padding: 8px 0;
+    text-align: center;
+  }
+
+  .sidebar {
+    float: none;
+    width: 100%;
+    padding: 20px 10px 15px 10px;
+  }
+
+  #content {
+    width: 100%;
+    float: none;
+    padding: 20px 10px 15px 10px;
+  }
+}
