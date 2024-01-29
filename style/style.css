@@ -300,21 +300,3 @@ table tr td
   min-height: 100vh;
   overflow: auto; /* Allow scrolling if needed */
 }
-
-/* Phone screens */
-@media only screen and (max-width: 600px), 
-only screen and (max-device-width: 600px), 
-only screen and (max-height: 600px), 
-only screen and (max-device-height: 600px), 
-only screen and (orientation: portrait), 
-only screen and (orientation: landscape) {
-
-  body {
-    font-size: 0.9em;
-  }
-
-  #logo_text h1 {
-    font-size: 1.5em;
-  }
-  
-}
