@@ -297,6 +297,6 @@ table tr td
 }
 
 #site_content {
-  min-height: 100vh;
+  min-height: calc(100vh - 200px - 33px);
   overflow: auto;
 }
