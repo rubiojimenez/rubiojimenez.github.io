@@ -1,5 +1,5 @@
 html
-{ height: 100vh;}
+{ height: 100%;}
 
 *
 { margin: 0;
@@ -228,7 +228,7 @@ ul#menu li a:hover
   font: 1em arial, sans-serif;} */
 
 #colours
-{ height: 0px;
+{ /* height: 0px; */
   text-align: right;
   padding: 66px 16px 0px 300px;}
   
@@ -298,5 +298,5 @@ table tr td
 
 #site_content {
   min-height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
