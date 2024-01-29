@@ -298,49 +298,5 @@ table tr td
 
 #site_content {
   min-height: 100vh;
-  overflow: auto;
-}
-
-
-
-
-
-/* Add a media query for screens smaller than 600px (adjust the value as needed) */
-@media only screen and (max-width: 600px) {
-  #main {
-    width: 100%; /* Make the main content full width on small screens */
-    background: none; /* Remove background image */
-  }
-
-  #header, #logo, #menubar, #site_content, #footer {
-    margin: 0; /* Remove margin to make elements full width */
-  }
-
-  #logo {
-    height: auto; /* Make the logo height auto to maintain aspect ratio */
-    background: none; /* Remove background image */
-  }
-
-  #logo #logo_text {
-    position: static; /* Reset the logo text position */
-  }
-
-  #logo h1, #logo h2 {
-    font-size: 1.5em; /* Adjust font size for smaller screens */
-  }
-
-  #menubar {
-    display: none; /* Hide the menu bar on small screens, consider using a mobile menu */
-  }
-
-  .sidebar {
-    float: none; /* Remove float for the sidebar */
-    width: 100%; /* Make the sidebar full width on small screens */
-    padding: 20px; /* Adjust padding for better spacing */
-  }
-
-  #content {
-    width: 100%; /* Make the content full width on small screens */
-    padding: 20px; /* Adjust padding for better spacing */
-  }
+  overflow: hidden;
 }
