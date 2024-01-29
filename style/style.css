@@ -308,6 +308,7 @@ only screen and (max-height: 600px),
 only screen and (max-device-height: 600px), 
 only screen and (orientation: portrait), 
 only screen and (orientation: landscape) {
+
   body {
     font-size: 0.9em;
   }
@@ -315,4 +316,5 @@ only screen and (orientation: landscape) {
   #logo_text h1 {
     font-size: 1.5em;
   }
+  
 }
