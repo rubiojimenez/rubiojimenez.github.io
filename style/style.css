@@ -250,17 +250,6 @@ ul#menu li a:hover
   border: 1px solid #E5E5E5; 
   background: #FFF; 
   color: #555;}
-  
-/* .form_settings .submit
-{ font: 1em arial; 
-  border: 1px solid; 
-  width: 99px; 
-  margin: 0 0 0 212px; 
-  height: 33px;
-  padding: 2px 0 3px 0;
-  cursor: pointer; 
-  background: #555; 
-  color: #FFF;} */
 
 .form_settings .submit {
   font-family: arial, sans-serif;
