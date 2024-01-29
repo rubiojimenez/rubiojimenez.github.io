@@ -298,5 +298,5 @@ table tr td
 
 #site_content {
   min-height: 100vh;
-  overflow: auto; /* Allow scrolling if needed */
+  overflow: auto;
 }
