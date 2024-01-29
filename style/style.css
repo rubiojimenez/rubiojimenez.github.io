@@ -18,23 +18,23 @@ img
 { border: 0;}
 
 h1, h2, h3, h4, h5, h6 
-{ font: normal 175% 'century gothic', arial, sans-serif;
+{ font: normal 1.75em 'century gothic', arial, sans-serif;
   color: #111;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;}
 
 h2
-{ font: normal 175% 'century gothic', arial, sans-serif;
+{ font: normal 1.75em 'century gothic', arial, sans-serif;
   color: #444;}
 
 h4, h5, h6
 { margin: 0;
   padding: 0 0 5px 0;
-  font: normal 120% arial, sans-serif;
+  font: normal 1.2em arial, sans-serif;
   color: #555;}
 
 h5, h6
-{ font: italic 95% arial, sans-serif;
+{ font: italic 0.95em arial, sans-serif;
   padding: 0 0 15px 0;
   color: #000;}
 
@@ -93,7 +93,7 @@ ol li
   left: 30px;}
 
 #logo h1, #logo h2
-{ font: normal 250% 'century gothic', arial, sans-serif;
+{ font: normal 2.5em 'century gothic', arial, sans-serif;
   border-bottom: 0;
   text-transform: none;
   margin: 0;}
@@ -133,7 +133,7 @@ ul#menu li
 
 ul#menu li a
 { letter-spacing: 0em;
-  font: normal 105% arial, sans-serif;
+  font: normal 1.05em arial, sans-serif;
   text-transform: uppercase;
   display: block; 
   float: left; 
@@ -220,12 +220,12 @@ ul#menu li a:hover
 { color: #FFF;
   text-decoration: none;}
 
-.search
+/* .search
 { color: #5D5D5D; 
   border: 1px solid #BBB; 
   width: 134px; 
   padding: 4px; 
-  font: 100% arial, sans-serif;}
+  font: 1em arial, sans-serif;} */
 
 #colours
 { height: 0px;
@@ -246,13 +246,13 @@ ul#menu li a:hover
 .form_settings input, .form_settings textarea
 { padding: 5px; 
   width: 299px; 
-  font: 100% arial; 
+  font: 1em arial; 
   border: 1px solid #E5E5E5; 
   background: #FFF; 
   color: #555;}
   
 /* .form_settings .submit
-{ font: 100% arial; 
+{ font: 1em arial; 
   border: 1px solid; 
   width: 99px; 
   margin: 0 0 0 212px; 
@@ -263,7 +263,7 @@ ul#menu li a:hover
   color: #FFF;} */
 
 .form_settings .submit
-{ font: 100% arial; 
+{ font: 1em arial; 
   border-width: 1px;
   border-style: solid;
   width: 99px; 
@@ -276,7 +276,7 @@ ul#menu li a:hover
 }
 
 .form_settings textarea, .form_settings select
-{ font: 100% arial; 
+{ font: 1em arial; 
   width: 299px;}
 
 .form_settings select
