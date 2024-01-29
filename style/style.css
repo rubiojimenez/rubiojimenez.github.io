@@ -209,7 +209,7 @@ ul#menu li a:hover
   color: #AAA;
   border-top: 1px solid #FFF;
   letter-spacing: 0.2em;
-  <!-- text-transform: uppercase;-->
+  /* text-transform: uppercase; */
   font-size: 80%;}
 
 #footer a
@@ -251,7 +251,7 @@ ul#menu li a:hover
   background: #FFF; 
   color: #555;}
   
-.form_settings .submit
+/* .form_settings .submit
 { font: 100% arial; 
   border: 1px solid; 
   width: 99px; 
@@ -260,7 +260,20 @@ ul#menu li a:hover
   padding: 2px 0 3px 0;
   cursor: pointer; 
   background: #555; 
-  color: #FFF;}
+  color: #FFF;} */
+
+.form_settings .submit
+{ font: 100% arial; 
+  border-width: 1px;
+  border-style: solid;
+  width: 99px; 
+  margin: 0 0 0 212px; 
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #555; 
+  color: #FFF;
+}
 
 .form_settings textarea, .form_settings select
 { font: 100% arial; 
