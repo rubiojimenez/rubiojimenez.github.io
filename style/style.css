@@ -194,8 +194,8 @@ ul#menu li a:hover
 
 #content_wide
 { text-align: left;
-  width: 830px;
-  float: left;
+  width: 810px;
+  float: center;
   padding: 20px 0 15px 30px;}
 
 #content ul
