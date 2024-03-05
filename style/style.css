@@ -9,18 +9,15 @@ body
 { font: normal .78em arial, sans-serif;
   background: #444;
   color: #555;
-  height: 100vh;
-}
+  height: 100vh;}
 
 p
 { padding: 0 0 9px 0;
-  line-height: 1.7em;
-}
+  line-height: 1.7em;}
 
 img
 { border: 0;
-  border-radius:5px;
-}
+  border-radius:5px;}
 
 h1, h2, h3, h4, h5, h6 
 { font: normal 1.75em 'century gothic', arial, sans-serif;
@@ -29,8 +26,7 @@ h1, h2, h3, h4, h5, h6
   padding: 15px 0 5px 0;}
 
 h2
-{ font: normal 1.75em 'century gothic', arial, sans-serif;
-  color: #444;}
+{color: #444;}
 
 h4, h5, h6
 { margin: 0;
@@ -196,6 +192,12 @@ ul#menu li a:hover
   float: left;
   padding: 20px 0 15px 30px;}
 
+#content_wide
+{ text-align: left;
+  width: 830px;
+  float: left;
+  padding: 20px 0 15px 30px;}
+
 #content ul
 { margin: 2px 0 22px 0px;}
 
@@ -280,5 +282,4 @@ ul#menu li a:hover
   
 #site_content {
   min-height: calc(100vh - 260px);
-  overflow: auto;
-}
+  overflow: auto;}
