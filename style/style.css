@@ -194,13 +194,23 @@ ul#menu li a:hover
 
 #content_wide
 { text-align: left;
-  width: 860px;
+  width: 840px;
   padding: 20px 0 15px 30px;}
 
 #content ul
 { margin: 2px 0 22px 0px;}
 
 #content ul li
+{ list-style-type: none;
+  background: url(bullet.png) no-repeat;
+  margin: 0 0 5px 0; 
+  padding: 0 0 3px 25px;
+  line-height: 1.5em;}
+
+#content_wide ul
+{ margin: 2px 0 22px 0px;}
+
+#content_wide ul li
 { list-style-type: none;
   background: url(bullet.png) no-repeat;
   margin: 0 0 5px 0; 
