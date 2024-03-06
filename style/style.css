@@ -195,7 +195,8 @@ ul#menu li a:hover
 #content_wide
 { text-align: left;
   width: 840px;
-  padding: 20px 0 15px 30px;}
+  padding: 20px 0 15px 30px;
+}
 
 #content ul
 { margin: 2px 0 22px 0px;}
@@ -291,4 +292,5 @@ ul#menu li a:hover
   
 #site_content {
   min-height: calc(100vh - 260px);
-  overflow: auto;}
+  overflow: auto;
+}
