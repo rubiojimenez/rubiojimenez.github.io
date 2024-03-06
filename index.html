@@ -121,16 +121,16 @@
        	*Please note that the short version of my name is either 'J. Rubio' or 'J. Rubio Jim&eacute;nez', as 'Rubio Jim&eacute;nez' are both surnames and I do not have a middle name. 
       </p>  	
 
-      <p id="visitor-counter">0</p>
 
+      <p id="visitor-counter">0</p>
       <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          // Retrieve current count from GitHub Pages API or any analytics service
-          // Increment count by 1
-          let currentCount = parseInt(document.getElementById("visitor-counter").innerText);
-          currentCount++;
-          document.getElementById("visitor-counter").innerText = currentCount;
-        });
+        let count = localStorage.getItem('counter') || 0;
+        
+        count++;
+      
+        document.getElementById("visitor-counter").innerText = count;
+      
+        localStorage.setItem('counter', count);
       </script>
 
     </div>
