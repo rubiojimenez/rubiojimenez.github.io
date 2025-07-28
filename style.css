@@ -227,3 +227,21 @@ a:hover { color: var(--accent-hover); }
   margin: 2rem 0;                                    
   display: block;
 }
+
+/* blog figures */
+.post-figure {
+  text-align: center;
+  margin: 20px 0;
+}
+.post-figure img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.post-figure figcaption {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 5px;
+}
