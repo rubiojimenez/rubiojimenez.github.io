@@ -144,11 +144,14 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
   justify-content: center;
   margin: 0;
   padding: 0.5rem 1rem;
+  flex-wrap: nowrap; /* prevent wrapping */
+  overflow-x: auto;  /* enable horizontal scroll if too long */
+  -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
 }
+
 nav a {
   color: var(--muted);
   text-decoration: none;
