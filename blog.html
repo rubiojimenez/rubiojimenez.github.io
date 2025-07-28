@@ -1,63 +1,117 @@
-<!DOCTYPE HTML>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Dr Jes&uacute;s Rubio </title>
+  <meta name="description" content="Blog of Dr Jes&uacute;s Rubio." />
+  <meta name="keywords" content="theoretical physics, quantum information, bayesian theory" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-<html>
-  <head>
-  	<title> Dr Jes&uacute;s Rubio </title>
-  	<meta name="description" content="Website of Dr Jes&uacute;s Rubio." />
-  	<meta name="keywords" content="theoretical physics, quantum estimation, bayesian theory" />
-  	<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-  	<link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
-  </head>
+  <!-- banner + profile + nav -->
+  <div class="header-container">
+    <div class="banner"></div>
 
-  <body>
-    <div id="main">
-    <div id="header">
-    <div id="logo">
-    
-	<div id="logo_text">
-      <h1><a href="index.html"><span class="logo_colour">
-		    Dr Jes&uacute;s Rubio
-	    </span></a></h1>
-      <h2> Theoretical Physicist </h2>
+    <div class="profile-row container">
+      <img src="files/profile.jpg" alt="Jesús Rubio" class="profile-pic" />
+      <div class="profile-text" style="text-align: center;">
+        <h1>Dr Jesús Rubio</h1>
+        <p>Theoretical physicist and quantum scientist. 
+        Understanding is the work.
+        Creation is the joy.</p>
+      </div>
     </div>
 
-    </div>
-    <div id="menubar">
-      
-      <ul id="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="research.html">Research vision</a></li>
-        <li><a href="academic.html">Academic life</a></li>
-        <li class="selected"><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
+    <nav>
+      <ul>
+        <li><a href="index.html#home"><strong>Home</strong></a></li>
+        <li><a href="index.html#research"><strong>Research</strong></a></li>
+        <li><a href="index.html#publications"><strong>Publications</strong></a></li>
+        <li><a href="index.html#presentations"><strong>Presentations</strong></a></li>
+        <li><a href="index.html#teaching"><strong>Teaching</strong></a></li>
+        <li><a href="blog.html"><strong>Blog</strong></a></li>
+        <li><a href="index.html#about"><strong>About</strong></a></li>    
       </ul>
-    </div>
-    </div>
-    
-    <div id="site_content">
+    </nav>
+  </div>
 
-    <div id="content_wide">
-        				
-      <p><span style="font-size: 11pt">
-        <strong> 2025-07-27/</strong>  
-        <a href="blog/2025-07-27entry.html">A summer highlight in Pisa</a>
-      </span></p>
+  <!-- main content -->
+  <main class="container">
 
-      <p><span style="font-size: 11pt">
-        <strong> 2025-02-21/</strong>  
-        <a href="blog/2025-02-21entry.html">On with global sensing</a>
-      </span></p> 
+    <!-- entry -->
+    <section id="2025-07-27" class="entry">
 
-    </div>
-    </div>
-       	
-    <div id="content_footer"></div>
-    <div id="footer">
-      &copy; Jes&uacute;s Rubio. All rights reserved. | 
-      <a href="mailto:jesus@rubiojimenez.com">jesus@rubiojimenez.com</a> | 
-      <a href="https://orcid.org/0000-0002-8193-8273">ORCiD: 0000-0002-8193-8273</a>
-    </div>
-    </div>
-  </body>
+      <h3>A summer highlight in Pisa</span></h3>             
+      <p>
+        <em>Guildford, 27 July 2025</em>  
+      </p> 
+            
+      <p>
+        I have spent a wonderful few days in Pisa giving a talk and exploring quantum estimation theory with Francesco Albarelli (Scuola Normale Superiore) and Dominic Branford (University of Florence). 
+        Fantastic science, great people, and an inspiring setting.
+      </p>
+
+      <p style="margin-bottom:25pt"></p> 
+
+      <figure style="text-align:center; margin: 20px 0;">
+        <img src="files/2025-07-21-pisa-tower.jpg" 
+        alt="Tower of Pisa" 
+        style="max-width: 300px; border-radius: 8px;">
+        <figcaption style="font-size: 10pt; color: #555; margin-top: 5px;">
+          The iconic Leaning Tower of Pisa.
+        </figcaption>
+      </figure>
+
+    </section>
+
+    </section>
+      <hr class="section-divider">
+    <section>
+
+    <!-- entry -->
+    <section id="2025-02-21" class="entry">
+
+      <h3>On with global sensing</h3>
+      <p><em>Virginia Water, 21 February 2025</em></p>
+      <p>
+        Today, my colleagues and I have released a new preprint that could reshape the foundations of quantum sensing, one of the three pillars of quantum technologies: 
+        <a href="https://arxiv.org/abs/2502.14817">arXiv:2502.14817</a>.
+      </p>
+      <p>
+        From the choice of ignorance priors and loss functions to the practical implementation of adaptive algorithms with optimal estimators, POVMs, and errors, this tutorial-style contribution provides a clear and cohesive formulation of global quantum sensing, metrology, and estimation through Bayesian principles of symmetry and geometry.
+      </p>
+      <p>
+        Still unsure? Explore ongoing work on practical sensing platforms:  
+        <a href="https://arxiv.org/abs/2410.10615">arXiv:2410.10615</a>,  
+        <a href="https://arxiv.org/abs/2310.02771">arXiv:2310.02771</a>, and  
+        <a href="https://arxiv.org/abs/2204.11816">arXiv:2204.11816</a>,  
+        where the concepts of location-isomorphic parameter and symmetry-informed estimation, on which our work rests, are experimentally validated.
+      </p>
+      <p>
+        If you have an experimental platform, all you need to do is specify the setup and follow these principles.  
+        The framework we present is adaptable to a wide range of sensing architectures, offering a systematic approach to optimal estimation and error reduction.
+      </p>
+      <p>
+        This work is the result of an international collaboration across five universities:  
+        Siegen (Germany), Nottingham (UK), Exeter (UK), La Laguna (Spain), and Surrey (UK).
+      </p>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <div class="footer-wrap">
+    <footer>
+      &copy; Jes&uacute;s Rubio
+      &middot;&nbsp; <a href="mailto:jesus@rubiojimenez.com">Email</a> &nbsp;
+      &middot;&nbsp; <a href="https://orcid.org/0000-0002-8193-8273">ORCiD</a> &nbsp;
+      &middot;&nbsp; <a href="https://arxiv.org/a/rubiojimenez_j_1">arXiv</a> &nbsp;
+      &middot;&nbsp; <a href="https://scholar.google.com/citations?hl=en&user=xs_ZVAoAAAAJ">Scholar</a> &nbsp;
+      &middot;&nbsp; <a href="https://github.com/rubiojimenez">GitHub</a> &nbsp;
+      &middot;&nbsp; <a href="https://bsky.app/profile/rubiojimenez.bsky.social">Bluesky</a>
+    </footer>
+  </div>
+
+</body>
 </html>

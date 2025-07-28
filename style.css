@@ -1,0 +1,225 @@
+:root {
+  --bg: #0d1110;
+  --fg: #d8d9d6;
+  --muted: #8f9d8f;
+  --accent: #a9f0c2;
+  --accent-hover: #d4e68f;
+  --bar-bg: rgba(8, 11, 10, 0.97);
+  --bar-border: #1f241f;
+  --maxw: 820px;
+  --lh: 1.65;
+  --nav-height: 50px;
+  --footer-height: 40px;
+  --side-padding: 1.5rem;
+  --banner-h: 90px  --banner-offset: -20px;
+  --profile-pic: 100px;
+}
+
+html {
+  scroll-behavior: smooth; 
+  scroll-padding-top: calc(var(--banner-h) + var(--profile-pic)/0.81 + var(--nav-height));
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, sans-serif;
+  line-height: var(--lh);
+  padding-bottom: var(--footer-height);
+  position: relative;
+}
+
+/* vertical lines spanning the page */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--bar-border);
+  z-index: 0;
+}
+
+body::before {
+  left: max(0px, calc(50% - var(--maxw) / 2 - 1px));
+}
+
+body::after {
+  right: max(0px, calc(50% - var(--maxw) / 2 - 1px));
+}
+
+/* container */
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--side-padding);
+  box-sizing: border-box;
+}
+
+/* banner + profile + nav */
+.header-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* banner */
+.banner {
+  position: relative;
+  height: var(--banner-h);     
+  overflow: hidden;            
+  max-width: 100%;             
+  margin: 0 auto;
+  filter: grayscale(100%) sepia(30%) hue-rotate(70deg) saturate(50%);
+  background: none;            
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: var(--maxw);          
+  transform: translateX(-50%);
+  background: url('files/banner.jpg') center center no-repeat;
+  background-size: cover;       
+}
+
+/* profile row */
+.profile-row,
+nav {
+  background: var(--bar-bg);
+  border-bottom: 1px solid var(--bar-bg);
+  border-top: 1px solid var(--bar-bg);
+  max-width: var(--maxw);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.profile-pic {
+  position: absolute;
+  top: calc(var(--banner-h) - var(--profile-pic) / 1.5); 
+  width: var(--profile-pic);
+  height: var(--profile-pic);
+  border-radius: 50%;
+  border: 2px solid var(--bar-border);
+  object-fit: cover;
+  background: var(--bg);
+  z-index: 1002; 
+  filter: grayscale(100%) sepia(30%) hue-rotate(70deg) saturate(50%);
+}
+
+.profile-text h1 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.3rem;
+  margin-top: 0.95rem; 
+}
+.profile-text p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: -0.5rem;
+}
+.profile-text a {
+  font-size: 0.95rem; 
+  color: var(--muted);
+  text-decoration: none;
+}
+.profile-text a:hover {
+  color: var(--accent-hover);
+}
+
+/* top navigation */
+nav {
+  background: var(--bar-bg);
+  border-bottom: 1px solid var(--bar-border);
+  max-width: var(--maxw);   
+  margin: 0 auto;          
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+nav a:hover,
+nav a.active {
+  color: var(--accent-hover);
+}
+
+/* main body */
+main { padding: 2rem 0 3rem; 
+}
+
+section { margin: 3rem 0; }
+
+h2, h3 {
+  line-height: 1.25;
+  margin: 0 0 0.8rem;
+}
+h2 { font-size: 1.35rem; margin-top: 3rem; }
+h3 { font-size: 1.15rem; }
+
+p, li { font-size: 0.95rem; }
+
+/* footer */
+.footer-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--maxw);
+  z-index: 1000;
+}
+footer {
+  background: var(--bar-bg);
+  color: var(--muted);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid var(--bar-border);
+  font-size: 0.9rem;
+  height: var(--footer-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* links */
+a { color: var(--muted); text-decoration: none; }
+a:hover { color: var(--accent-hover); }
+
+/* text selection */
+::selection { background: #5c6e62; color: #e2e4e1; }
+
+/* responsiveness */
+@media (max-width: 820px) {
+  .banner,
+  .profile-row,
+  nav,
+  footer {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+/* horizontal lines */
+.section-divider {
+  border: 0;
+  border-top: 1px solid var(--bar-border);
+  position: relative;
+  left: calc(-1 * var(--side-padding));              
+  width: calc(100% + 2 * var(--side-padding));       
+  margin: 2rem 0;                                    
+  display: block;
+}
