@@ -250,7 +250,12 @@ a:hover { color: var(--accent-hover); }
 #bio:target::after {
   content: "";
   display: block;
-  height: 70vh; /* tune */
+  height: calc(
+    var(--banner-h)
+    + var(--profile-pic) / 0.81
+    + var(--nav-height)
+    - var(--footer-height)
+  );
   pointer-events: none;
 }
 
