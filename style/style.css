@@ -245,3 +245,11 @@ a:hover { color: var(--accent-hover); }
   color: var(--muted);
   margin-top: 5px;
 }
+
+/* scroll runway */
+#bio:target::after {
+  content: "";
+  display: block;
+  height: 70vh;          /* tune this */
+  pointer-events: none;
+}
