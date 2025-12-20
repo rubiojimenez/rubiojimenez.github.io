@@ -246,16 +246,4 @@ a:hover { color: var(--accent-hover); }
   margin-top: 5px;
 }
 
-/* scroll runway */
-#bio:target::after {
-  content: "";
-  display: block;
-  height: calc(
-    var(--banner-h)
-    + var(--profile-pic) / 0.81
-    + var(--nav-height)
-    - var(--footer-height)
-  );
-  pointer-events: none;
-}
 
