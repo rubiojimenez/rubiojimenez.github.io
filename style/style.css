@@ -174,7 +174,12 @@ h2, h3 {
 h2 { font-size: 1.35rem; margin-top: 3rem; }
 h3 { font-size: 1.15rem; }
 
-p, li { font-size: 0.95rem; }
+p { font-size: 0.95rem; }
+
+li {
+  font-size: 0.95rem;
+  margin-bottom: 6pt;
+}
 
 /* footer */
 .footer-wrap {
