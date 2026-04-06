@@ -1,10 +1,9 @@
 :root {
-  --bg: #0d1110;
+  --bg: #141816;
   --fg: #d8d9d6;
   --muted: #8f9d8f;
-  --accent: #a9f0c2;
   --accent-hover: #d4e68f;
-  --bar-bg: rgba(8, 11, 10, 0.97);
+  --bar-bg: #141816;
   --bar-border: #1f241f;
   --maxw: 820px;
   --lh: 1.65;
@@ -250,5 +249,3 @@ a:hover { color: var(--accent-hover); }
   color: var(--muted);
   margin-top: 5px;
 }
-
-
