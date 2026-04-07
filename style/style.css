@@ -9,7 +9,7 @@
   --accent: #b7cd95;
   --accent-hover: #d1e2a5;
   --bar-bg: #2c3833;
-  --bar-border: #506057;
+  --bar-border: #2c3833;
 
   --maxw: 820px;
   --lh: 1.7;
@@ -144,9 +144,9 @@ nav {
   z-index: 1002;
   width: var(--profile-pic);
   height: var(--profile-pic);
-  border: 1px solid #65746b;
+  border: 1px solid var(--bar-border);
   border-radius: 50%;
-  background: var(--bg);
+  background: var(--bar-border);
   object-fit: cover;
   filter: grayscale(100%) sepia(12%) hue-rotate(55deg) saturate(65%);
 }
