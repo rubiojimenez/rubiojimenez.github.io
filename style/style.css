@@ -50,16 +50,16 @@ body::after {
   top: 0;
   bottom: 0;
   z-index: 0;
-  width: 1px;
+  width: 2px;
   background: var(--bar-border);
 }
 
 body::before {
-  left: max(0px, calc(50% - var(--maxw) / 2 - 1px));
+  left: max(0px, calc(50% - var(--maxw) / 2 - 2px));
 }
 
 body::after {
-  right: max(0px, calc(50% - var(--maxw) / 2 - 1px));
+  right: max(0px, calc(50% - var(--maxw) / 2 - 2px));
 }
 
 /* text selection */
@@ -133,8 +133,8 @@ nav {
   max-width: var(--maxw);
   margin: 0 auto;
   background: var(--bar-bg);
-  border-top: 1px solid var(--bar-bg);
-  border-bottom: 1px solid var(--bar-bg);
+  border-top: 2px solid var(--bar-bg);
+  border-bottom: 2px solid var(--bar-bg);
 }
 
 /* profile image */
@@ -144,7 +144,7 @@ nav {
   z-index: 1002;
   width: var(--profile-pic);
   height: var(--profile-pic);
-  border: 1px solid var(--bar-border);
+  border: 2px solid var(--bar-border);
   border-radius: 50%;
   background: var(--bar-border);
   object-fit: cover;
@@ -180,7 +180,7 @@ nav {
   max-width: var(--maxw);
   margin: 0 auto;
   background: var(--bar-bg);
-  border-bottom: 1px solid var(--bar-border);
+  border-bottom: 2px solid var(--bar-border);
 }
 
 nav ul {
@@ -253,7 +253,7 @@ li {
   width: calc(100% + 2 * var(--side-padding));
   margin: 2rem 0;
   border: 0;
-  border-top: 1px solid var(--bar-border);
+  border-top: 2px solid var(--bar-border);
 }
 
 /* =========================
@@ -261,7 +261,7 @@ li {
    ========================= */
 
 .post-figure {
-  margin: 1px 0;
+  margin: 2px 0;
   text-align: center;
 }
 
@@ -299,7 +299,7 @@ footer {
   justify-content: center;
   height: var(--footer-height);
   padding: 0.5rem 1rem;
-  border-top: 1px solid var(--bar-border);
+  border-top: 2px solid var(--bar-border);
   background: var(--bar-bg);
   color: #97a39b;
   text-align: center;
