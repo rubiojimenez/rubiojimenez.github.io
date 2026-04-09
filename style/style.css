@@ -18,9 +18,9 @@
   --footer-height: 40px;
   --side-padding: 1.5rem;
 
-  --banner-h: 90px;
+  --banner-h: 120px;
   --banner-offset: -20px;
-  --profile-pic: 100px;
+  --profile-pic: 85px;
 }
 
 /* =========================
@@ -111,7 +111,6 @@ a:hover {
   margin: 0 auto;
   overflow: hidden;
   background: none;
-  filter: grayscale(100%) sepia(12%) hue-rotate(55deg) saturate(65%);
 }
 
 .banner::before {
@@ -122,8 +121,10 @@ a:hover {
   width: var(--maxw);
   height: 100%;
   transform: translateX(-50%);
-  background: url("../style/banner.jpg") center center no-repeat;
+  background: url("../style/banner.jpg") no-repeat;
+  background-position: 100% 40%;  
   background-size: cover;
+  filter: brightness(0.8) contrast(0.9);
 }
 
 /* profile row + nav */
@@ -140,12 +141,12 @@ nav {
 /* profile image */
 .profile-pic {
   position: absolute;
-  top: calc(var(--banner-h) - var(--profile-pic) / 1.5);
+  top: calc(var(--banner-h) - var(--profile-pic) / 2);
   z-index: 1002;
   width: var(--profile-pic);
   height: var(--profile-pic);
   border: 2px solid var(--bar-border);
-  border-radius: 50%;
+  border-radius: 50%; 
   background: var(--bar-border);
   object-fit: cover;
   filter: grayscale(100%) sepia(12%) hue-rotate(55deg) saturate(65%);
