@@ -1,15 +1,20 @@
 :root {
   /* colours */
-  --bg: #222b27;
-  --fg: #d8d9d6;
-  --muted: #a3aea5;
 
-  --accent: #b7cd95;
-  --accent-hover: #d1e2a5;
+  /* backgrounds */
+  --bg: #222d2d;
+  --bar-bg: #293736;
+  --bar-border: #293736;
 
-  --bar-bg: #2c3833;
-  --bar-border: #2c3833;
+  /* text */
+  --fg: #e1e4e1;
+  --muted: #8e9d94;
 
+  /* links / accents */
+  --accent: #a8c19b;
+  --accent-hover: #c2d8b7;
+
+  /* selection */
   --selection-bg: #5c6e62;
   --selection-fg: #e2e4e1;
 
