@@ -1,11 +1,13 @@
 :root {
-  --bg: #222b27;
+  --bg: #243238;
   --fg: #d8d9d6;
-  --muted: #a3aea5;
-  --accent: #b7cd95;
-  --accent-hover: #d1e2a5;
-  --bar-bg: #2c3833;
-  --bar-border: #2c3833;
+  --muted: #a2afb0;
+
+  --accent: #a2bea9;
+  --accent-hover: #bad1c1;
+
+  --bar-bg: #31434a;
+  --bar-border: #3a4f57;
 
   --maxw: 820px;
   --lh: 1.7;
@@ -294,7 +296,7 @@ footer {
   padding: 0.5rem 1rem;
   border-top: 2px solid var(--bar-border);
   background: var(--bar-bg);
-  color: #97a39b;
+  color: var(--muted);
   text-align: center;
   font-size: 0.82rem;
 }
