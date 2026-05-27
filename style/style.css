@@ -13,6 +13,17 @@
   --selection-bg: #5c6e62;
   --selection-fg: #e2e4e1;
 
+  /* typography */
+  --font-body: "Inter",
+               "Source Sans 3",
+               system-ui,
+               -apple-system,
+               "Segoe UI",
+               Roboto,
+               Ubuntu,
+               Cantarell,
+               sans-serif;
+
   /* layout */
   --maxw: 820px;
   --lh: 1.7;
@@ -37,7 +48,7 @@ body {
   padding-bottom: var(--footer-height);
   background: var(--bg);
   color: var(--fg);
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, sans-serif;
+  font-family: var(--font-body);
   line-height: var(--lh);
 }
 
