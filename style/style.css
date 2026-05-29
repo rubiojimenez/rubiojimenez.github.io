@@ -15,24 +15,16 @@
   --accent-hover: #4f5f2a;
 
   /* selection */
-  --selection-bg: #69783d;
+  --selection-bg: var(--accent);
   --selection-fg: #ffffff;
 
   /* typography */
-  --font-body: "Inter",
-               "Source Sans 3",
-               system-ui,
-               -apple-system,
-               "Segoe UI",
-               Roboto,
-               Ubuntu,
-               Cantarell,
-               sans-serif;
+  --font-body: "Inter", "Source Sans 3", system-ui, -apple-system,
+               "Segoe UI", Roboto, Ubuntu, Cantarell, sans-serif;
 
   /* layout */
   --maxw: 820px;
   --lh: 1.65;
-
   --nav-height: 41.5px;
   --footer-height: 40px;
   --side-padding: 1.5rem;
@@ -40,6 +32,10 @@
   --banner-h: 96px;
   --banner-offset: -20px;
   --profile-pic: 81.5px;
+
+  --line: 1.5px;
+  --figure-maxw: 300px;
+  --radius-sm: 5px;
 }
 
 html {
@@ -65,16 +61,16 @@ body::after {
   top: 0;
   bottom: 0;
   z-index: 0;
-  width: 1.5px;
+  width: var(--line);
   background: var(--bar-border);
 }
 
 body::before {
-  left: max(0px, calc(50% - var(--maxw) / 2 - 1.5px));
+  left: max(0px, calc(50% - var(--maxw) / 2 - var(--line)));
 }
 
 body::after {
-  right: max(0px, calc(50% - var(--maxw) / 2 - 1.5px));
+  right: max(0px, calc(50% - var(--maxw) / 2 - var(--line)));
 }
 
 /* text selection */
@@ -122,14 +118,10 @@ a:hover {
 .banner::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 50%;
+  inset: 0 auto 0 50%;
   width: var(--maxw);
-  height: 100%;
   transform: translateX(-50%);
-  background: url("../style/banner.jpg") no-repeat;
-  background-position: 100% 40%;
-  background-size: cover;
+  background: url("../style/banner.jpg") no-repeat 100% 40% / cover;
   filter: brightness(0.8) contrast(0.9);
 }
 
@@ -140,8 +132,8 @@ nav {
   max-width: var(--maxw);
   margin: 0 auto;
   background: var(--bar-bg);
-  border-top: 1.5px solid var(--bar-bg);
-  border-bottom: 1.5px solid var(--bar-bg);
+  border-top: var(--line) solid var(--bar-bg);
+  border-bottom: var(--line) solid var(--bar-bg);
 }
 
 /* profile image */
@@ -151,60 +143,48 @@ nav {
   z-index: 1002;
   width: var(--profile-pic);
   height: var(--profile-pic);
-  border: 1.5px solid var(--bar-border);
+  border: var(--line) solid var(--bar-border);
   border-radius: 50%;
   background: var(--bar-border);
   object-fit: cover;
-/*  filter: grayscale(100%) sepia(12%) hue-rotate(55deg) saturate(65%); */
+  filter: saturate(85%) contrast(95%);
 }
 
 /* profile text */
 .profile-text h1 {
-  margin: 0 0 0.3rem 0;
-  margin-top: 0.75rem;
+  margin: 0.75rem 0 0.3rem;
   font-size: 1.25rem;
 }
 
 .profile-text p {
-  margin: 0 0 0.35rem 0;
-  margin-top: -0.35rem;
+  margin: -0.35rem 0 0.35rem;
   color: var(--muted);
   font-size: 0.88rem;
 }
 
 .profile-text a {
-  color: var(--accent);
   font-size: 0.95rem;
-  text-decoration: none;
-}
-
-.profile-text a:hover {
-  color: var(--accent-hover);
 }
 
 /* navigation */
 nav {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  background: var(--bar-bg);
-  border-bottom: 1.5px solid var(--bar-border);
+  border-bottom-color: var(--bar-border);
 }
 
 nav ul {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 1rem;
   margin: 0;
   padding: 0.35rem 1rem;
-  list-style: none;
-  flex-wrap: nowrap;
   overflow-x: auto;
+  list-style: none;
   -webkit-overflow-scrolling: touch;
 }
 
 nav a {
   color: var(--muted);
-  text-decoration: none;
   transition: color 0.15s ease;
 }
 
@@ -240,13 +220,13 @@ h3 {
   font-size: 1.15rem;
 }
 
-p {
+p,
+li {
   font-size: 0.95rem;
 }
 
 li {
   margin-bottom: 6pt;
-  font-size: 0.95rem;
 }
 
 /* section divider */
@@ -257,7 +237,7 @@ li {
   width: calc(100% + 2 * var(--side-padding));
   margin: 2rem 0;
   border: 0;
-  border-top: 1.5px solid var(--bar-border);
+  border-top: var(--line) solid var(--bar-border);
 }
 
 /* blog figures */
@@ -269,9 +249,9 @@ li {
 .post-figure img {
   display: block;
   width: 100%;
-  max-width: 300px;
+  max-width: var(--figure-maxw);
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
 }
 
 .post-figure figcaption {
@@ -297,7 +277,7 @@ footer {
   justify-content: center;
   height: var(--footer-height);
   padding: 0.5rem 1rem;
-  border-top: 1.5px solid var(--bar-border);
+  border-top: var(--line) solid var(--bar-border);
   background: var(--bar-bg);
   color: var(--muted);
   text-align: center;
