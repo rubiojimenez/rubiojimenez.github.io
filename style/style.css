@@ -23,7 +23,7 @@
                "Segoe UI", Roboto, Ubuntu, Cantarell, sans-serif;
 
   /* layout */
-  --maxw: 820px;
+  --maxw: 818.5px;
   --lh: 1.65;
   --nav-height: 41.5px;
   --footer-height: 40px;
@@ -66,7 +66,7 @@ body::after {
 }
 
 body::before {
-  left: max(0px, calc(50.045% - var(--maxw) / 2 - var(--line)));
+  left: max(0px, calc(50.02% - var(--maxw) / 1.9999 - var(--line)));
 }
 
 body::after {
@@ -108,7 +108,7 @@ a:hover {
 /* banner */
 .banner {
   position: relative;
-  max-width: 100%;
+  max-width: 100.5%;
   height: var(--banner-h);
   margin: 0 auto;
   overflow: hidden;
@@ -285,7 +285,7 @@ footer {
 }
 
 /* responsive */
-@media (max-width: 820px) {
+@media (max-width: 818.5px) {
   .banner,
   .profile-row,
   nav,
