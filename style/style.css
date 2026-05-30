@@ -40,7 +40,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--banner-h) + var(--profile-pic) / 0.81 + var(--nav-height));
+  scroll-padding-top: calc(var(--banner-h) + var(--profile-pic) / 0.64 + var(--nav-height));
 }
 
 body {
@@ -66,7 +66,7 @@ body::after {
 }
 
 body::before {
-  left: max(0px, calc(50% - var(--maxw) / 2 - var(--line)));
+  left: max(0px, calc(50.045% - var(--maxw) / 2 - var(--line)));
 }
 
 body::after {
