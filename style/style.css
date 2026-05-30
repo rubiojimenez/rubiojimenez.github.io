@@ -53,7 +53,7 @@ body::after {
 }
 
 body::before {
-  left: max(1px, calc(50% - var(--maxw) / 2 - var(--line)));
+  left: max(0px, calc(50% - var(--maxw) / 2 - var(--line)));
 }
 
 body::after {
