@@ -1,39 +1,28 @@
 :root {
   /* colours */
-
-  /* backgrounds */
   --bg: #fbfcf8;
   --bar-bg: #e8ece6;
   --bar-border: #8f9a8a;
-
-  /* text */
   --fg: #0f1111;
   --muted: #4f5853;
-
-  /* links / accents */
   --accent: #69783d;
   --accent-hover: #4f5f2a;
-
-  /* selection */
   --selection-bg: var(--accent);
   --selection-fg: #ffffff;
 
   /* typography */
-  --font-body: "Inter", "Source Sans 3", system-ui, -apple-system,
-               "Segoe UI", Roboto, Ubuntu, Cantarell, sans-serif;
+  --font-body: system-ui;
 
   /* layout */
   --maxw: 818.5px;
   --lh: 1.65;
-  --nav-height: 41.5px;
+  --nav-height: 41px;
   --footer-height: 40px;
   --side-padding: 1.5rem;
-
   --banner-h: 96px;
   --banner-offset: -20px;
-  --profile-pic: 81.5px;
-
-  --line: 1.5px;
+  --profile-pic: 81px;
+  --line: 1px;
   --figure-maxw: 300px;
   --radius-sm: 5px;
 }
@@ -53,51 +42,50 @@ body {
   line-height: var(--lh);
 }
 
-/* vertical guide lines */
 body::before,
 body::after {
   content: "";
   position: fixed;
-  top: 0;
-  bottom: 0;
+  inset-block: 0;
   z-index: 0;
   width: var(--line);
   background: var(--bar-border);
 }
 
 body::before {
-  left: max(0px, calc(50.02% - var(--maxw) / 1.9999 - var(--line)));
+  left: max(0px, calc(50% - var(--maxw) / 2 - var(--line)));
 }
 
 body::after {
   right: max(0px, calc(50% - var(--maxw) / 2 - var(--line)));
 }
 
-/* text selection */
 ::selection {
   background: var(--selection-bg);
   color: var(--selection-fg);
 }
 
-/* layout primitives */
-.container {
+.container,
+footer {
   box-sizing: border-box;
+}
+
+.container {
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 0 var(--side-padding);
 }
 
-/* global links */
 a {
   color: var(--accent);
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+nav a.active {
   color: var(--accent-hover);
 }
 
-/* header */
 .header-container {
   position: sticky;
   top: 0;
@@ -105,7 +93,6 @@ a:hover {
   width: 100%;
 }
 
-/* banner */
 .banner {
   position: relative;
   max-width: 100.5%;
@@ -125,7 +112,6 @@ a:hover {
   filter: brightness(0.8) contrast(0.9);
 }
 
-/* profile row + nav */
 .profile-row,
 nav {
   width: 100%;
@@ -136,7 +122,6 @@ nav {
   border-bottom: var(--line) solid var(--bar-bg);
 }
 
-/* profile image */
 .profile-pic {
   position: absolute;
   top: calc(var(--banner-h) - var(--profile-pic) / 2);
@@ -150,7 +135,6 @@ nav {
   filter: saturate(85%) contrast(95%);
 }
 
-/* profile text */
 .profile-text h1 {
   margin: 0.75rem 0 0.3rem;
   font-size: 1.25rem;
@@ -166,7 +150,6 @@ nav {
   font-size: 0.95rem;
 }
 
-/* navigation */
 nav {
   border-bottom-color: var(--bar-border);
 }
@@ -192,11 +175,6 @@ nav a:hover {
   color: var(--accent);
 }
 
-nav a.active {
-  color: var(--accent-hover);
-}
-
-/* main content */
 main {
   padding: 1.7rem 0 3.2rem;
 }
@@ -229,7 +207,6 @@ li {
   margin-bottom: 6pt;
 }
 
-/* section divider */
 .section-divider {
   position: relative;
   left: calc(-1 * var(--side-padding));
@@ -240,9 +217,8 @@ li {
   border-top: var(--line) solid var(--bar-border);
 }
 
-/* blog figures */
 .post-figure {
-  margin: 1.5px 0;
+  margin: 1px 0;
   text-align: center;
 }
 
@@ -260,7 +236,6 @@ li {
   font-size: 0.95rem;
 }
 
-/* footer */
 .footer-wrap {
   position: fixed;
   bottom: 0;
@@ -271,7 +246,6 @@ li {
 }
 
 footer {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,7 +258,6 @@ footer {
   font-size: 0.82rem;
 }
 
-/* responsive */
 @media (max-width: 818.5px) {
   .banner,
   .profile-row,
