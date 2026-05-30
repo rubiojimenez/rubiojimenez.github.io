@@ -14,7 +14,7 @@
   --font-body: system-ui;
 
   /* layout */
-  --maxw: 818.5px;
+  --maxw: 818px;
   --lh: 1.65;
   --nav-height: 41px;
   --footer-height: 40px;
@@ -95,7 +95,7 @@ nav a.active {
 
 .banner {
   position: relative;
-  max-width: 100.5%;
+  max-width: 100%;
   height: var(--banner-h);
   margin: 0 auto;
   overflow: hidden;
@@ -258,7 +258,7 @@ footer {
   font-size: 0.82rem;
 }
 
-@media (max-width: 818.5px) {
+@media (max-width: 818px) {
   .banner,
   .profile-row,
   nav,
