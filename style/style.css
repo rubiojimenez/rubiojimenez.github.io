@@ -1,5 +1,4 @@
 :root {
-  /* colours */
   --bg: #fbfcf8;
   --bar-bg: #e8ece6;
   --bar-border: #8f9a8a;
@@ -8,12 +7,10 @@
   --accent: #69783d;
   --accent-hover: #4f5f2a;
   --selection-bg: var(--accent);
-  --selection-fg: #ffffff;
+  --selection-fg: #fff;
 
-  /* typography */
   --font-body: system-ui;
 
-  /* layout */
   --maxw: 818px;
   --lh: 1.65;
   --nav-height: 41px;
@@ -72,8 +69,8 @@ footer {
 
 .container {
   max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 0 var(--side-padding);
+  margin-inline: auto;
+  padding-inline: var(--side-padding);
 }
 
 a {
@@ -97,7 +94,7 @@ nav a.active {
   position: relative;
   max-width: 100%;
   height: var(--banner-h);
-  margin: 0 auto;
+  margin-inline: auto;
   overflow: hidden;
   background: none;
 }
@@ -112,11 +109,10 @@ nav a.active {
   filter: brightness(0.8) contrast(0.9);
 }
 
-.profile-row,
-nav {
+:is(.profile-row, nav) {
   width: 100%;
   max-width: var(--maxw);
-  margin: 0 auto;
+  margin-inline: auto;
   background: var(--bar-bg);
   border-top: var(--line) solid var(--bar-bg);
   border-bottom: var(--line) solid var(--bar-bg);
@@ -176,15 +172,14 @@ nav a:hover {
 }
 
 main {
-  padding: 1.7rem 0 3.2rem;
+  padding-block: 1.7rem 3.2rem;
 }
 
 section {
-  margin: 3rem 0;
+  margin-block: 3rem;
 }
 
-h2,
-h3 {
+:is(h2, h3) {
   margin: 0 0 0.8rem;
   line-height: 1.25;
 }
@@ -198,8 +193,7 @@ h3 {
   font-size: 1.15rem;
 }
 
-p,
-li {
+:is(p, li) {
   font-size: 0.95rem;
 }
 
@@ -212,13 +206,13 @@ li {
   left: calc(-1 * var(--side-padding));
   display: block;
   width: calc(100% + 2 * var(--side-padding));
-  margin: 2rem 0;
+  margin-block: 2rem;
   border: 0;
   border-top: var(--line) solid var(--bar-border);
 }
 
 .post-figure {
-  margin: 1px 0;
+  margin-block: 1px;
   text-align: center;
 }
 
@@ -226,7 +220,7 @@ li {
   display: block;
   width: 100%;
   max-width: var(--figure-maxw);
-  margin: 0 auto;
+  margin-inline: auto;
   border-radius: var(--radius-sm);
 }
 
@@ -259,10 +253,7 @@ footer {
 }
 
 @media (max-width: 818px) {
-  .banner,
-  .profile-row,
-  nav,
-  footer {
+  :is(.banner, .profile-row, nav, footer) {
     max-width: 100%;
     margin: 0;
   }
