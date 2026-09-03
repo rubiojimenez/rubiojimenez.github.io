@@ -214,9 +214,17 @@ li {
   border-top: var(--line) solid var(--bar-border);
 }
 
+.post-gallery {
+  margin-top: 20px;
+}
+
 .post-figure {
   margin: 1px 0;
   text-align: center;
+}
+
+.entry > .post-figure {
+  margin: 20px 0 1px;
 }
 
 .post-figure img {
