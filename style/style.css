@@ -215,7 +215,7 @@ li {
 }
 
 .post-gallery {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .post-figure {
@@ -224,7 +224,7 @@ li {
 }
 
 .entry > .post-figure {
-  margin: 20px 0 1px;
+  margin: 25px 0 15px;
 }
 
 .post-figure img {
