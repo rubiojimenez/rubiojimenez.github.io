@@ -1,105 +1,105 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Posterior thoughts | Dr Jesús Rubio's blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Jesús Rubio" />
-  <meta name="description" content="Bayes gets tractable, one subspace at a time" />
-  <link rel="stylesheet" href="../style/style.css" />
-  <link rel="icon" type="image/png" href="../style/favicon.png" />
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bayes gets tractable, one subspace at a time | Posterior thoughts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Edward Gandar" />
+    <link rel="canonical" href="https://rubiojimenez.com/blog/2026-08-24-bayes-gets-practical-one-subspace-at-a-time.html" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="icon" type="image/png" href="../style/favicon.png" />
+  </head>
+  <body>
 
-  <!-- banner + profile + nav -->
-  <div class="header-container">
-    <div class="banner"></div>
+    <!-- banner + profile + nav -->
+    <div class="header-container" data-nosnippet>
+      <div class="banner"></div>
 
-    <div class="profile-row container">
-      <img src="../style/profile.jpg" alt="Jesús Rubio" class="profile-pic" />
-      <div class="profile-text" style="text-align: center;">
-        <h1>Posterior thoughts</h1>
-        <p>
-          Dr Jesús Rubio's blog. 
-          Understanding is the work; creating is the joy.
-        </p>    
+      <div class="profile-row container">
+        <img src="../style/profile.jpg" alt="Jesús Rubio" class="profile-pic" />
+        <div class="profile-text" style="text-align: center;">
+          <h1>Posterior thoughts</h1>
+          <p>
+            Dr Jesús Rubio's blog.
+            Understanding is the work; creating is the joy.
+          </p>
+        </div>
       </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html#home"><strong>Home</strong></a></li>
+          <li><a href="../index.html#research"><strong>Research</strong></a></li>
+          <li><a href="../index.html#works"><strong>Works</strong></a></li>
+          <li><a href="../index.html#talks"><strong>Talks</strong></a></li>
+          <li><a href="../blog.html"><strong>Blog</strong></a></li>
+          <li><a href="../index.html#bio"><strong>Bio</strong></a></li>
+          <li><a href="../index.html#contact"><strong>Contact</strong></a></li>
+        </ul>
+      </nav>
     </div>
 
-    <nav>
-      <ul>
-        <li><a href="../index.html#home"><strong>Home</strong></a></li>
-        <li><a href="../index.html#research"><strong>Research</strong></a></li>
-        <li><a href="../index.html#works"><strong>Works</strong></a></li>
-        <li><a href="../index.html#talks"><strong>Talks</strong></a></li>
-        <li><a href="../blog.html"><strong>Blog</strong></a></li>
-        <li><a href="../index.html#bio"><strong>Bio</strong></a></li>    
-        <li><a href="../index.html#contact"><strong>Contact</strong></a></li>
-      </ul>
-    </nav>
-  </div>
+    <!-- main content -->
+    <main class="container">
+      <section id="2026-08-24" class="entry">
 
-  <!-- main content -->
-  <main class="container">
-    <section id="2026-08-24" class="entry">
+        <h3>Bayes gets tractable, one subspace at a time</h3>
 
-      <h3>Bayes gets tractable, one subspace at a time</h3>
-
-      <p>
-        <em>Guest post by Edward Gandar. 
+        <p>
+          <em>Guest post by Edward Gandar.
           Portsmouth, 24 August 2026</em>
-      </p>
+        </p>
 
-      <p>
-        Bayesian quantum estimation is a theory of statistical inference used to estimate unknown parameters encoded in quantum states. 
-        It is particularly suited for scenarios with limited data and takes into account any prior information known beforehand (if any!). 
-        The theory can tell you the optimal way to prepare your probe, what measurement to make, and how to best process your data.
-      </p>
+        <p>
+          Bayesian quantum estimation is a theory of statistical inference used to estimate unknown parameters encoded in quantum states.
+          It is particularly suited for scenarios with limited data and takes into account any prior information known beforehand (if any!).
+          The theory can tell you the optimal way to prepare your probe, what measurement to make, and how to best process your data.
+        </p>
 
-      <p>
-        Many quantum technologies are built on continuous-variable systems, for example the bosonic modes of laser light, with applications ranging from gravitational wave detection to ultra-precise magnetometry. 
-        The catch is that these systems live in infinite-dimensional Hilbert spaces, which makes the equations defining the optimal strategy difficult to solve. 
-        So far, Bayesian treatments have mostly had to fall back on numerics.
-      </p>
+        <p>
+          Many quantum technologies are built on continuous-variable systems, for example the bosonic modes of laser light, with applications ranging from gravitational wave detection to ultra-precise magnetometry.
+          The catch is that these systems live in infinite-dimensional Hilbert spaces, which makes the equations defining the optimal strategy difficult to solve.
+          So far, Bayesian treatments have mostly had to fall back on numerics.
+        </p>
 
-      <p>
-        In 
-        <a href="https://doi.org/10.48550/arXiv.2605.16978">arXiv:2605.16978</a>,
-        we suggest an alternative. The idea is to stop asking for the globally optimal measurement and estimator, and instead ask for the best one available inside a subspace we choose in advance. 
-        This turns the optimisation into a convex quadratic problem, with the solution given by a finite-dimensional linear system. 
-        For Gaussian states, which are completely specified by a mean and a covariance matrix, every entry of this linear system follows from those two objects, so the whole construction remains analytic.
-      </p>
+        <p>
+          In
+          <a href="https://doi.org/10.48550/arXiv.2605.16978">arXiv:2605.16978</a>,
+          we suggest an alternative. The idea is to stop asking for the globally optimal measurement and estimator, and instead ask for the best one available inside a subspace we choose in advance.
+          This turns the optimisation into a convex quadratic problem, with the solution given by a finite-dimensional linear system.
+          For Gaussian states, which are completely specified by a mean and a covariance matrix, every entry of this linear system follows from those two objects, so the whole construction remains analytic.
+        </p>
 
-      <p>
-        Of course, giving up global optimality raises the obvious question: how much do you lose? Here the answer has a nice geometric form. 
-        The subspace-optimal estimator-measurement pair is the projection of the global optimum onto the chosen subspace, and the extra loss you incur is exactly the squared distance between the two. 
-        You never have to construct the global optimum to find its projection.
-      </p>
+        <p>
+          Of course, giving up global optimality raises the obvious question: how much do you lose? Here the answer has a nice geometric form.
+          The subspace-optimal estimator-measurement pair is the projection of the global optimum onto the chosen subspace, and the extra loss you incur is exactly the squared distance between the two.
+          You never have to construct the global optimum to find its projection.
+        </p>
 
-      <figure class="post-figure">
-        <img src="../blog/images/2026-08-projection-framework.png" alt="Projection framework">
-        <figcaption>Projecting the global optimum onto a tractable subspace.</figcaption>
-      </figure>   
+        <figure class="post-figure">
+          <img src="../blog/images/2026-08-projection-framework.png" alt="Projection framework">
+          <figcaption>Projecting the global optimum onto a tractable subspace.</figcaption>
+        </figure>
 
-      <p>
-        Best of all, none of this really depends on the states being Gaussian. 
-        The only requirement is that the relevant moments are finite, and that says nothing about dimension, so the same machinery applies to non-Gaussian continuous-variable probes and to finite-dimensional systems, covering a wide range of estimation scenarios.
-      </p>
+        <p>
+          Best of all, none of this really depends on the states being Gaussian.
+          The only requirement is that the relevant moments are finite, and that says nothing about dimension, so the same machinery applies to non-Gaussian continuous-variable probes and to finite-dimensional systems, covering a wide range of estimation scenarios.
+        </p>
 
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <!-- footer -->
-  <div class="footer-wrap">
-    <footer>
-      &copy; Jesús Rubio
-      &middot;&nbsp;<a href="mailto:jesus@rubiojimenez.com">Email</a>
-      &nbsp;&middot;&nbsp;<a href="https://arxiv.org/a/rubiojimenez_j_1">arXiv</a>
-      &nbsp;&middot;&nbsp;<a href="https://github.com/rubiojimenez">GitHub</a>
-      &nbsp;&middot;&nbsp;<a href="https://scholar.google.com/citations?hl=en&user=xs_ZVAoAAAAJ">Scholar</a>
-      &nbsp;&middot;&nbsp;<a href="https://orcid.org/0000-0002-8193-8273">ORCID</a>
-    </footer>
-  </div>
+    <!-- footer -->
+    <div class="footer-wrap" data-nosnippet>
+      <footer>
+        &copy; Jesús Rubio
+        &middot;&nbsp;<a href="mailto:jesus@rubiojimenez.com">Email</a>
+        &nbsp;&middot;&nbsp;<a href="https://arxiv.org/a/rubiojimenez_j_1">arXiv</a>
+        &nbsp;&middot;&nbsp;<a href="https://github.com/rubiojimenez">GitHub</a>
+        &nbsp;&middot;&nbsp;<a href="https://scholar.google.com/citations?hl=en&user=xs_ZVAoAAAAJ">Scholar</a>
+        &nbsp;&middot;&nbsp;<a href="https://orcid.org/0000-0002-8193-8273">ORCID</a>
+      </footer>
+    </div>
 
-</body>
+  </body>
 </html>
